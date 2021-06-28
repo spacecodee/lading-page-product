@@ -1,0 +1,19 @@
+{
+  "name": "lading-page-product",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run build-css\"",
+    "build-css": "node-sass --watch src/assets/scss/ -o src/assets/css/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1",
+    "sass": "^1.35.1"
+  }
+}
