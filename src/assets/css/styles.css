@@ -125,6 +125,7 @@ button {
         font-size: 4.8rem; }
       .section .section__promotion .section__promotion-accessory h2,
       .section .section__promotion .section__promotion-accessory p {
+        text-align: center;
         padding-top: 1rem; }
       .section .section__promotion .section__promotion-accessory p {
         text-align: center;
@@ -137,3 +138,63 @@ button {
     font-size: 1.5rem;
     text-align: center;
     color: #fdfffc; }
+
+/*Resize*/
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column-reverse;
+    align-items: flex-start; }
+    .main .main__section-promotion h1::after {
+      width: 60rem; }
+    .main .main__section-img {
+      margin: 0 5rem; }
+      .main .main__section-img img {
+        width: 50rem; }
+  .section {
+    text-align: center; } }
+
+@media (max-width: 850px) {
+  .main .main__section-promotion h1::after {
+    width: 50rem; }
+  .main .main__section-promotion .main__section-body p {
+    padding: 0; }
+  .section .section__promotion {
+    flex-direction: column; } }
+
+@media (max-width: 690px) {
+  .main .main__section-promotion h1::after {
+    width: 40rem; } }
+
+@media (max-width: 592px) {
+  .main {
+    padding: 4rem 3rem; }
+    .main .main__section-promotion h1::after {
+      width: 30rem; }
+  .section {
+    padding: 4rem 3rem; }
+  .footer {
+    padding: 1rem 3rem; } }
+
+@media (max-width: 550px) {
+  .main .main__section-promotion h1 {
+    font-size: 3.5rem; }
+  .main .main__section-promotion h1::after {
+    width: 20rem; }
+  .main .main__section-promotion .main__section-body h2 {
+    font-size: 2rem; }
+  .main .main__section-promotion .main__section-body p {
+    font-size: 1.5rem; }
+  .main .main__section-promotion .main__section-body button {
+    font-size: 1.5rem; }
+  .main .main__section-img img {
+    width: 70rem; }
+  .section .section__promotion .section__promotion-accessory h2 {
+    font-size: 2rem; }
+  .section .section__promotion .section__promotion-accessory p {
+    font-size: 1.5rem; } }
+
+@media (max-width: 320px) {
+  .main .main__section-promotion h1 {
+    font-size: 3rem; }
+  .main .main__section-promotion h1::after {
+    width: 15.5rem; } }
